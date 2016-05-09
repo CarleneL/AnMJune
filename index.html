@@ -8,6 +8,7 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 		<link href='https://fonts.googleapis.com/css?family=Raleway:200' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
 		<link href='stylesheet.css' rel="stylesheet" type="text/css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
@@ -33,11 +34,11 @@
 				    <!-- Collect the nav links, forms, and other content for toggling -->
 				    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				      <ul class="nav navbar-nav">
-				        <li><a href="#">Home <span class="sr-only">(current)</span></a></li>
-				        <li><a href="#">Our Story</a></li>
-				        <li><a href="#">The Big Day</a></li>
-				        <li><a href="#">Photos</a></li>
-				        <li><a href="#">Registry</a></li>
+				        <li><a id='main' href="#">Home <span class="sr-only">(current)</span></a></li>
+				        <li><a id='story' href="#">Our Story</a></li>
+				        <li><a id ='bD' href="#">The Big Day</a></li>
+				        <li><a id='photo' href="#">Photos</a></li>
+				        <li><a id='reg' href="#">Registry</a></li>
 				      </ul>
 
 				    </div><!-- /.navbar-collapse -->
@@ -47,6 +48,25 @@
 			<div id="bannertext">
 				<h1>Ariana &amp; Michael</h1>
 				<p>June 17, 2017</p>
+			</div>
+
+			<div id="clockdiv" style="display:none">
+			  <div>
+			    <span class="days"></span>
+			    <div class="smalltext">Days</div>
+			  </div>
+			  <div>
+			    <span class="hours"></span>
+			    <div class="smalltext">Hours</div>
+			  </div>
+			  <div>
+			    <span class="minutes"></span>
+			    <div class="smalltext">Minutes</div>
+			  </div>
+			  <div>
+			    <span class="seconds"></span>
+			    <div class="smalltext">Seconds</div>
+			  </div>
 			</div>
 			<div class='content'>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget lobortis metus. Donec interdum tellus cursus, egestas massa ac, feugiat mi. Aenean dapibus, lacus nec accumsan accumsan, risus ligula tempor lacus, in consectetur lacus augue ac urna. In vel dictum velit, eu accumsan augue. In hac habitasse platea dictumst. Proin semper elementum purus, a porttitor sem egestas id. Aliquam convallis sem ut justo ultrices, et tempor risus viverra. Nam id mauris quis leo viverra imperdiet sed ac dui. Nam hendrerit posuere nisi sed consectetur. Quisque sagittis pulvinar ante, condimentum rhoncus tortor congue in. Donec convallis mauris dictum metus bibendum pellentesque. Nulla vel libero nulla.
@@ -77,6 +97,68 @@
 					Mauris tempus, neque et gravida tristique, dui tellus cursus lectus, rhoncus tristique metus magna ut quam. Sed lacus urna, euismod a euismod a, scelerisque id ex. Etiam rhoncus interdum felis a sodales. Aenean imperdiet risus ac sem vestibulum suscipit. Nulla facilisi. Nulla eu euismod nisi. Mauris mollis cursus metus, ut vulputate justo sollicitudin non. Donec sit amet mi interdum, vehicula turpis nec, porttitor magna. Nullam erat lacus, varius at lacus eu, convallis consectetur sapien. Maecenas eget placerat ex, quis imperdiet metus. Cras et quam diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean rhoncus dolor libero, malesuada facilisis sapien iaculis ultrices. Aenean et nunc ipsum. Pellentesque sagittis ex nunc.</p>
 
 				</div>
+
+				<div class='ourStory'>
+					<div class='header'>
+						<h1> Our Story </h1>
+					</div>
+					<hr>
+
+					<div class='polaroid'>
+						<p> A night in </p>
+						<img class='polaroid' src="Assets/AnMCasual.jpg"/>
+					</div>
+
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget lobortis metus. Donec interdum tellus cursus, egestas massa ac, feugiat mi. Aenean dapibus, lacus nec accumsan accumsan, risus ligula tempor lacus, in consectetur lacus augue ac urna. In vel dictum velit, eu accumsan augue. In hac habitasse platea dictumst. Proin semper elementum purus, a porttitor sem egestas id. Aliquam convallis sem ut justo ultrices, et tempor risus viverra. Nam id mauris quis leo viverra imperdiet sed ac dui. Nam hendrerit posuere nisi sed consectetur. Quisque sagittis pulvinar ante, condimentum rhoncus tortor congue in. Donec convallis mauris dictum metus bibendum pellentesque. Nulla vel libero nulla.
+
+					</p>
+
+					<div class='polaroid'>
+						<p> Cheers </p>
+						<img class='polaroid' src="Assets/cheers.jpg"/>
+					</div>
+					<p>
+						 Proin semper elementum purus, a porttitor sem egestas id. Aliquam convallis sem ut justo ultrices, et tempor risus viverra. Nam id mauris quis leo viverra imperdiet sed ac dui. Nam hendrerit posuere nisi sed consectetur. Quisque sagittis pulvinar ante, condimentum rhoncus tortor congue in. Donec convallis mauris dictum metus bibendum pellentesque. Nulla vel libero nulla.
+						  Proin semper elementum purus, a porttitor sem egestas id. Aliquam convallis sem ut justo ultrices, et tempor risus viverra. Nam id mauris quis leo viverra imperdiet sed ac dui. Nam hendrerit posuere nisi sed consectetur. Quisque sagittis pulvinar ante, condimentum rhoncus tortor congue in. Donec convallis mauris dictum metus bibendum pellentesque. Nulla vel libero nulla.
+					</p>
+					<div class='polaroid'>
+						<p> The Proposal! </p>
+						<img class='polaroid' src="Assets/restaurant_blur.jpg">
+					</div>
+					<p>
+						 Proin semper elementum purus, a porttitor sem egestas id. Aliquam convallis sem ut justo ultrices, et tempor risus viverra. Nam id mauris quis leo viverra imperdiet sed ac dui. Nam hendrerit posuere nisi sed consectetur. Quisque sagittis pulvinar ante, condimentum rhoncus tortor congue in. Donec convallis mauris dictum metus bibendum pellentesque. Nulla vel libero nulla.
+						  Proin semper elementum purus, a porttitor sem egestas id. Aliquam convallis sem ut justo ultrices, et tempor risus viverra. Nam id mauris quis leo viverra imperdiet sed ac dui. Nam hendrerit posuere nisi sed consectetur. Quisque sagittis pulvinar ante, condimentum rhoncus tortor congue in. Donec convallis mauris dictum metus bibendum pellentesque. Nulla vel libero nulla.
+					</p>
+
+				</div>
+
+				<div class='bigDay'>
+					<div class='header'>
+						<h1> The Big Day </h1>
+					</div>
+					<hr>
+
+					<div class='polaroid'>
+						<p> Glen Foerd Mansion </p>
+						<img class='polaroid' src="Assets/theVenue.jpg">
+					</div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget lobortis metus. Donec interdum tellus cursus, egestas massa ac, feugiat mi. Aenean dapibus, lacus nec accumsan accumsan, risus ligula tempor lacus, in consectetur lacus augue ac urna. In vel dictum velit, eu accumsan augue. In hac habitasse platea dictumst. Proin semper elementum purus, a porttitor sem egestas id. Aliquam convallis sem ut justo ultrices, et tempor risus viverra. Nam id mauris quis leo viverra imperdiet sed ac dui. Nam hendrerit posuere nisi sed consectetur. Quisque sagittis pulvinar ante, condimentum rhoncus tortor congue in. Donec convallis mauris dictum metus bibendum pellentesque. Nulla vel libero nulla.
+						 Proin semper elementum purus, a porttitor sem egestas id. Aliquam convallis sem ut justo ultrices, et tempor risus viverra. Nam id mauris quis leo viverra imperdiet sed ac dui. Nam hendrerit posuere nisi sed consectetur. Quisque sagittis pulvinar ante, condimentum rhoncus tortor congue in. Donec convallis mauris dictum metus bibendum pellentesque. Nulla vel libero nulla.
+					</p>
+
+				</div>
+				<div class='gallery'>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget lobortis metus. Donec interdum tellus cursus, egestas massa ac, feugiat mi. Aenean dapibus, lacus nec accumsan accumsan, risus ligula tempor lacus, in consectetur lacus augue ac urna. In vel dictum velit, eu accumsan augue. In hac habitasse platea dictumst. Proin semper elementum purus, a porttitor sem egestas id. Aliquam convallis sem ut justo ultrices, et tempor risus viverra. Nam id mauris quis leo viverra imperdiet sed ac dui. Nam hendrerit posuere nisi sed consectetur. Quisque sagittis pulvinar ante, condimentum rhoncus tortor congue in. Donec convallis mauris dictum metus bibendum pellentesque. Nulla vel libero nulla.
+						 Proin semper elementum purus, a porttitor sem egestas id. Aliquam convallis sem ut justo ultrices, et tempor risus viverra. Nam id mauris quis leo viverr
+					</p>
+
+				</div>
+				<div class='gifts'>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget lobortis metus. Donec interdum tellus cursus, egestas massa ac, feugiat mi. Aenean dapibus, lacus nec accumsan accumsan, risus ligula tempor lacus, in consectetur lacus augue ac urna. In vel dictum velit, eu accumsan augue. In hac habitasse platea dictumst. Proin semper elementum purus, a p
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget lobortis metus. Donec interdum tellus cursus, egestas massa ac, feugiat mi. Aenean dapibus, lacus nec accumsan accumsan, risus ligula tempor lacus, in consectetur lacus augue ac urna. In vel dictum velit, eu accumsan augue. In hac habitasse platea dictumst. Proin semper elementum purus, a p
+					</p>
+
+				</div>
 			</div>
 		</div>
 	<div class = "backdrop">
@@ -85,6 +167,97 @@
 		<div class="background backdrop-full backdrop-fill" style="opacity: 1; background-image: url(Assets/RingCloseUp.jpg); background-position: 50% 50%;">
 		</div>
 	</div>
+
+
+	<script>
+		$(document).ready(function(){
+			$('#story').click(function(){
+				$('.content').css('display','none');
+				$('.bigDay').css('display','none');
+				$('.gallery').css('display','none');
+				$('.gifts').css('display','none');
+				$('.ourStory').css('display','block');
+			});
+
+			$('#main').click(function(){
+				
+				$('.bigDay').css('display','none');
+				$('.gallery').css('display','none');
+				$('.gifts').css('display','none');
+				$('.ourStory').css('display','none');
+				$('.content').css('display','block');
+			});
+
+			$('#bD').click(function(){
+				$('.content').css('display','none');
+				$('.gallery').css('display','none');
+				$('.gifts').css('display','none');
+				$('.ourStory').css('display','none');
+				$('.bigDay').css('display','block');
+			});
+
+			$('#photo').click(function(){
+				$('.content').css('display','none');
+				$('.bigDay').css('display','none');
+				$('.gifts').css('display','none');
+				$('.ourStory').css('display','none');
+				$('.gallery').css('display','block');
+			});
+
+			$('#reg').click(function(){
+				$('.content').css('display','none');
+				$('.bigDay').css('display','none');
+				$('.gallery').css('display','none');
+				$('.ourStory').css('display','none');
+				$('.gifts').css('display','block');
+			});
+
+			function getTimeRemaining(endtime) {
+			  var t = Date.parse(endtime) - Date.parse(new Date());
+			  var seconds = Math.floor((t / 1000) % 60);
+			  var minutes = Math.floor((t / 1000 / 60) % 60);
+			  var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+			  var days = Math.floor(t / (1000 * 60 * 60 * 24));
+			  return {
+			    'total': t,
+			    'days': days,
+			    'hours': hours,
+			    'minutes': minutes,
+			    'seconds': seconds
+			  };
+			}
+
+			function initializeClock(id, endtime) {
+			  var clock = document.getElementById(id);
+			  var daysSpan = clock.querySelector('.days');
+			  var hoursSpan = clock.querySelector('.hours');
+			  var minutesSpan = clock.querySelector('.minutes');
+			  var secondsSpan = clock.querySelector('.seconds');
+
+			  function updateClock() {
+			    var t = getTimeRemaining(endtime);
+
+			    daysSpan.innerHTML = t.days;
+			    hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+			    minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+			    secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+
+			    if (t.total <= 0) {
+			      clearInterval(timeinterval);
+			    }
+			  }
+
+			  updateClock();
+			  var timeinterval = setInterval(updateClock, 1000);
+			}
+
+			var deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
+			initializeClock('clockdiv', deadline);
+
+
+		});
+	</script>
+
 	</body>
 
 </html>
