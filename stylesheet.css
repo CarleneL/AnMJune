@@ -43,6 +43,8 @@ html, body {
     }
 }
 
+
+
 .backdrop{
 	z-index: -99999;
     min-width: 100%;
@@ -194,4 +196,31 @@ html, body {
 .polaroid{
 	margin-left: 25%;
 	margin-top: 20px;
+}
+
+@media (max-width: 768px){
+
+	.content, .ourStory, .bigDay, .gallery, .gifts{
+		max-height:100%;
+		background:rgba(211,211,211,.2);
+		width: 24em;
+		margin-top: 150px;
+		margin-left: 1.5em;
+
+	}
+
+	#bannertext { 
+		position: static;
+		/*top: 500px; */
+		margin-top: 40%;
+		/*left: 25%; */
+		margin-left: 1.5em; 
+		padding: 2em 0; 
+		
+	}
+
+	.polaroid{
+		margin-left: 2em;
+	}
+
 }

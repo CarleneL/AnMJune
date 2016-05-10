@@ -212,6 +212,14 @@
 				$('.gifts').css('display','block');
 			});
 
+			  $(".navbar-nav li a").click(function (event) {
+			    // check if window is small enough so dropdown is created
+			    var toggle = $(".navbar-toggle").is(":visible");
+			    if (toggle) {
+			      $(".navbar-collapse").collapse('hide');
+			    }
+			  });
+
 			function getTimeRemaining(endtime) {
 			  var t = Date.parse(endtime) - Date.parse(new Date());
 			  var seconds = Math.floor((t / 1000) % 60);
